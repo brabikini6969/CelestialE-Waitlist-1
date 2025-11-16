@@ -19,6 +19,11 @@ export default {
         ring: "hsl(var(--ring))",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
+        'deep-space-blue': "hsl(var(--deep-space-blue))",
+        'cosmic-purple': "hsl(var(--cosmic-purple))",
+        'stellar-gold': "hsl(var(--stellar-gold))",
+        'nebula-pink': "hsl(var(--nebula-pink))",
+        'galaxy-teal': "hsl(var(--galaxy-teal))",
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
@@ -66,9 +71,14 @@ export default {
       backgroundImage: {
         'gradient-cosmic': 'var(--gradient-cosmic)',
         'gradient-space': 'var(--gradient-space)',
+        'gradient-nebula': 'var(--gradient-nebula)',
+        'gradient-stellar': 'var(--gradient-stellar)',
       },
       boxShadow: {
         'glow': 'var(--shadow-glow)',
+        'glow-gold': 'var(--shadow-glow-gold)',
+        'glow-pink': 'var(--shadow-glow-pink)',
+        'glow-teal': 'var(--shadow-glow-teal)',
         'elegant': 'var(--shadow-elegant)',
       },
       borderRadius: {
@@ -78,25 +88,37 @@ export default {
       },
       keyframes: {
         "accordion-down": {
-          from: {
-            height: "0",
-          },
-          to: {
-            height: "var(--radix-accordion-content-height)",
-          },
+          from: { height: "0" },
+          to: { height: "var(--radix-accordion-content-height)" },
         },
         "accordion-up": {
-          from: {
-            height: "var(--radix-accordion-content-height)",
-          },
-          to: {
-            height: "0",
-          },
+          from: { height: "var(--radix-accordion-content-height)" },
+          to: { height: "0" },
+        },
+        "float": {
+          "0%, 100%": { transform: "translateY(0px)" },
+          "50%": { transform: "translateY(-20px)" },
+        },
+        "pulse-glow": {
+          "0%, 100%": { opacity: "1" },
+          "50%": { opacity: "0.5" },
+        },
+        "spin-slow": {
+          "0%": { transform: "rotate(0deg)" },
+          "100%": { transform: "rotate(360deg)" },
+        },
+        "twinkle": {
+          "0%, 100%": { opacity: "1", transform: "scale(1)" },
+          "50%": { opacity: "0.3", transform: "scale(0.8)" },
         },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        "float": "float 6s ease-in-out infinite",
+        "pulse-glow": "pulse-glow 2s ease-in-out infinite",
+        "spin-slow": "spin-slow 20s linear infinite",
+        "twinkle": "twinkle 3s ease-in-out infinite",
       },
     },
   },
