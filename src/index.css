@@ -18,6 +18,13 @@
     --popover: 0 0% 100%;
     --popover-foreground: 240 80% 8%;
 
+    /* Cosmic Color Palette */
+    --deep-space-blue: 240 80% 8%;
+    --cosmic-purple: 262 83% 58%;
+    --stellar-gold: 45 100% 50%;
+    --nebula-pink: 330 100% 70%;
+    --galaxy-teal: 180 100% 50%;
+
     --primary: 262 83% 58%;
     --primary-foreground: 0 0% 100%;
     --primary-glow: 262 83% 68%;
@@ -43,9 +50,14 @@
     /* Cosmic Gradients */
     --gradient-cosmic: linear-gradient(135deg, hsl(262 83% 58%), hsl(220 70% 50%), hsl(180 100% 50%));
     --gradient-space: linear-gradient(180deg, hsl(240 80% 8%), hsl(262 83% 20%));
+    --gradient-nebula: linear-gradient(135deg, hsl(330 100% 70%), hsl(262 83% 58%), hsl(220 70% 50%));
+    --gradient-stellar: radial-gradient(circle, hsl(45 100% 50% / 0.2), transparent);
     
     /* Cosmic Shadows */
     --shadow-glow: 0 0 40px hsl(262 83% 68% / 0.4);
+    --shadow-glow-gold: 0 0 30px hsl(45 100% 50% / 0.3);
+    --shadow-glow-pink: 0 0 30px hsl(330 100% 70% / 0.3);
+    --shadow-glow-teal: 0 0 30px hsl(180 100% 50% / 0.3);
     --shadow-elegant: 0 10px 30px -10px hsl(262 83% 58% / 0.3);
 
     --sidebar-background: 0 0% 98%;
@@ -68,6 +80,13 @@
 
     --popover: 240 60% 12%;
     --popover-foreground: 0 0% 98%;
+
+    /* Cosmic Color Palette */
+    --deep-space-blue: 240 80% 8%;
+    --cosmic-purple: 262 83% 58%;
+    --stellar-gold: 45 100% 50%;
+    --nebula-pink: 330 100% 70%;
+    --galaxy-teal: 180 100% 50%;
 
     --primary: 262 83% 58%;
     --primary-foreground: 0 0% 100%;
@@ -92,9 +111,14 @@
     /* Cosmic Gradients - Dark */
     --gradient-cosmic: linear-gradient(135deg, hsl(262 83% 58%), hsl(220 70% 50%), hsl(180 100% 50%));
     --gradient-space: linear-gradient(180deg, hsl(240 80% 8%), hsl(262 83% 20%));
+    --gradient-nebula: linear-gradient(135deg, hsl(330 100% 70%), hsl(262 83% 58%), hsl(220 70% 50%));
+    --gradient-stellar: radial-gradient(circle, hsl(45 100% 50% / 0.2), transparent);
     
     /* Cosmic Shadows - Dark */
     --shadow-glow: 0 0 40px hsl(262 83% 68% / 0.6);
+    --shadow-glow-gold: 0 0 30px hsl(45 100% 50% / 0.5);
+    --shadow-glow-pink: 0 0 30px hsl(330 100% 70% / 0.5);
+    --shadow-glow-teal: 0 0 30px hsl(180 100% 50% / 0.5);
     --shadow-elegant: 0 10px 30px -10px hsl(262 83% 58% / 0.5);
 
     --sidebar-background: 240 5.9% 10%;
