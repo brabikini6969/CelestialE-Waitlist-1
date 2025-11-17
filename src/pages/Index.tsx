@@ -1,20 +1,53 @@
 import { Layout } from "@/components/Layout";
 import { CosmicBackground } from "@/components/cosmic";
+import { HeroSection } from "@/components/home/HeroSection";
+import { CountdownTimer } from "@/components/home/CountdownTimer";
+import { FeatureCarousel } from "@/components/home/FeatureCarousel";
+import { motion } from "framer-motion";
 
 const Index = () => {
   return (
     <Layout>
       <CosmicBackground showStars showParticles>
-        <div className="flex min-h-[calc(100vh-80px)] items-center justify-center">
-          <div className="text-center px-4">
-            <h1 className="text-5xl md:text-7xl font-orbitron font-bold mb-6 bg-gradient-cosmic bg-clip-text text-transparent">
-              Welcome to CelestialE
-            </h1>
-            <p className="text-xl md:text-2xl text-foreground/80 mb-8 max-w-2xl mx-auto">
-              Embark on an extraordinary cosmic journey. Join our waitlist today.
+        <HeroSection />
+        
+        {/* Countdown Section */}
+        <motion.section
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8 }}
+          className="py-20 px-4"
+        >
+          <div className="max-w-6xl mx-auto text-center">
+            <h2 className="text-3xl md:text-4xl font-orbitron font-bold mb-4 text-foreground">
+              Launch Countdown
+            </h2>
+            <p className="text-muted-foreground mb-12 font-inter max-w-2xl mx-auto">
+              Be part of something extraordinary. The cosmic journey begins soon.
             </p>
+            <CountdownTimer />
           </div>
-        </div>
+        </motion.section>
+
+        {/* Feature Highlights */}
+        <motion.section
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8 }}
+          className="py-20 px-4"
+        >
+          <div className="max-w-6xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-orbitron font-bold mb-4 text-center text-foreground">
+              Why Join CelestialE?
+            </h2>
+            <p className="text-muted-foreground mb-12 text-center font-inter max-w-2xl mx-auto">
+              Discover the features that make us the future of digital innovation.
+            </p>
+            <FeatureCarousel />
+          </div>
+        </motion.section>
       </CosmicBackground>
     </Layout>
   );
